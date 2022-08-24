@@ -8,13 +8,29 @@ public class Student {
 
     protected boolean status;
 
-    public Student(String name, String address, int age, boolean sex, boolean status) {
+    public Student(String name) {
         this.name = name;
+    }
+
+    public Student(String name, String address) {
+        this(name);
         this.address = address;
+    }
+
+    public Student(String name, String address, int age) {
+        this(name, address);
         this.age = age;
+    }
+
+    public Student(String name, String address, int age, boolean sex) {
+        this(name, address, age);
         this.sex = sex;
+    }
+    public Student(String name, String address, int age, boolean sex, boolean status) {
+        this(name, address, age, sex);
         this.status = status;
     }
+
 
     @Override
     public String toString() {
@@ -26,6 +42,8 @@ public class Student {
                 ", status=" + status +
                 '}';
     }
+
+
 
     public String getName() {
         return name;
