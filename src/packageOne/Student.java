@@ -8,6 +8,8 @@ public class Student {
 
     protected boolean status;
 
+
+//    Overloading là hàm trong một lớp có chung tên nhưng khác tham số truyền vào
     public Student(String name) {
         this.name = name;
     }
@@ -80,6 +82,11 @@ public class Student {
 
     public void studentEat() {
         System.out.println(this.name + " đang ăn" + " ở " + this.address);
+        System.out.println("Giới tính của " + this.name + " là :" + (this.sex ? "nam" : "nu"));
+    }
+
+    public void studentEat(String test) {
+        System.out.println(this.name + " đang ăn" + " ở " + this.address + test);
         System.out.println("Giới tính của " + this.name + " là :" + (this.sex ? "nam" : "nu"));
     }
 }
