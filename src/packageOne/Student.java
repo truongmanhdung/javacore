@@ -84,7 +84,6 @@ public class Student {
         System.out.println(this.name + " đang ăn" + " ở " + this.address);
         System.out.println("Giới tính của " + this.name + " là :" + (this.sex ? "nam" : "nu"));
     }
-
     public void studentEat(String test) {
         System.out.println(this.name + " đang ăn" + " ở " + this.address + test);
         System.out.println("Giới tính của " + this.name + " là :" + (this.sex ? "nam" : "nu"));
